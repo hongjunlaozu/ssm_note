@@ -1,0 +1,36 @@
+#博客表
+CREATE TABLE `tb_blog` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `tid` int(11) NOT NULL,
+  `title` varchar(255) DEFAULT NULL,
+  `content` text,
+  `ddate` date DEFAULT NULL,
+  `username` varchar(16) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8;
+
+
+#分类表
+CREATE TABLE `tb_type` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `seq` int(11) NOT NULL,
+  `name` varchar(32) NOT NULL,
+  `username` varchar(16) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8;
+
+
+#用户表
+CREATE TABLE `tb_user` (
+  `username` varchar(16) NOT NULL,
+  `password` varchar(16) NOT NULL,
+  `email` varchar(32) NOT NULL,
+  `state` char(1) NOT NULL COMMENT '0未激活  1已激活',
+  `image` varchar(255) DEFAULT NULL,
+  `motto` varchar(255) DEFAULT NULL,
+  PRIMARY KEY (`username`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+
+INSERT INTO `tb_user` VALUES ('admin12', '123456', '1146784017@qq.com', '0', 'img/timg.jpg', '生活是一种态度');
+INSERT INTO `tb_user` VALUES ('zhangsan', '123456', '1146784017@qq.com', '0', ' img/timg.jpg ', '生活是一种态度haha');

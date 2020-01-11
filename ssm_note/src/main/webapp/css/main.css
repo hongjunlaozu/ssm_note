@@ -1,0 +1,32 @@
+.list-content{
+	border:1px solid #C0C0C0 ;
+	height: auto;
+}
+.right-content>div{
+	border:1px solid #C0C0C0 ;
+	margin-bottom: 20px;
+}
+.rz-class{
+	padding-bottom: 10px;
+}
+.rz-class a{
+	line-height: 25px;
+	margin-left: 20px;
+	cursor: pointer;
+}
+.pages{
+	margin-left: 250px;
+}
+.float-right{
+	float: right;
+	margin-right: 10px;
+}
+
+.padding-content{
+	padding-bottom: 30px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+.content-table tr{
+	border: none;
+}
